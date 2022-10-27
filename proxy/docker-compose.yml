@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  nginx-proxy:
+    image: nginxproxy
+    depends_on:
+      - servera
+      - serverb
+    ports:
+      - "8080:80"
+
+  servera:
+    image: servera:2.0
+
+  serverb:
+    image: serverb:1.0  
+ 
