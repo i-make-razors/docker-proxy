@@ -202,7 +202,7 @@ Once the services have started you can navigate to `http://locahost:8080` to see
 If you refresh your browser a few times you should see it toggle between the a/b server outputs.
 You can also utilize the `poll.sh` script in the repo to continuously poll the servers.
 
-```bash
+```text
 ./poll.sh
 Hello From Server A!
 Hello From Server B!
@@ -280,7 +280,7 @@ sudo docker-compose up -d
 Now when looking at the output we should see the results switch from the old servera output to the new
 server a output
 
-```bash
+```text
 Hello From Server A!
 Hello From Server B!
 Hello From Server A!
